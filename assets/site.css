@@ -277,6 +277,26 @@ h1 {
   letter-spacing: 0.06em;
 }
 
+.policy-contact {
+  padding: 3.5rem 0 4.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.policy-contact h2 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.policy-contact p:not(.eyebrow) {
+  max-width: 48rem;
+  margin: 0 0 0.75rem;
+}
+
+.policy-contact a {
+  color: var(--accent);
+  text-underline-offset: 0.25rem;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
