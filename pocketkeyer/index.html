@@ -6,6 +6,7 @@
     <meta name="description" content="PocketKeyerは、iPhoneだけでリアルタイムにクロマキー合成ができるiOSアプリです。Real-time chroma key compositing, right on your iPhone.">
     <title>PocketKeyer — iPhoneでリアルタイムに背景合成</title>
     <link rel="stylesheet" href="../assets/site.css">
+    <script src="../assets/comparison.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動 / Skip to content</a>
@@ -29,6 +30,14 @@
           <p class="product-tagline">iPhoneだけで、リアルタイムに背景合成。<br>しかも操作が簡単。</p>
           <p class="product-intro">PocketKeyerは、グリーンバックやブルーバックの前で撮影した映像を、写真や動画とリアルタイムに合成するiPhoneアプリです。</p>
           <p class="product-intro" lang="en">PocketKeyer composites green-screen or blue-screen footage with a photo or video in real time—right on your iPhone.</p>
+          <div class="release-status" aria-label="リリース状況 / Release status">
+            <span class="release-dot" aria-hidden="true"></span>
+            <div>
+              <strong>App Storeで近日リリース予定</strong>
+              <span>現在、TestFlightでテスト中です。</span>
+              <span lang="en">Coming soon to the App Store. Currently in TestFlight testing.</span>
+            </div>
+          </div>
           <div class="hero-facts" aria-label="主な特徴 / Key facts">
             <span>iPhone</span>
             <span>1080p</span>
@@ -40,6 +49,29 @@
           <img src="../assets/images/pocketkeyer-icon.png" alt="PocketKeyerのアプリアイコン" width="1024" height="1024">
           <p>Live compositing<br>on your iPhone</p>
         </div>
+      </section>
+
+      <section class="product-section comparison-section" aria-labelledby="comparison-title">
+        <div class="section-heading">
+          <p class="eyebrow">Actual PocketKeyer output</p>
+          <h2 id="comparison-title">実際に、PocketKeyerで<br>合成しました。</h2>
+          <p>グリーンバックの撮影素材を、PocketKeyerでリアルタイムに背景合成した結果です。中央のハンドルを左右に動かして比較できます。</p>
+          <p lang="en">This composite was created in real time with PocketKeyer. Drag the handle to compare the camera image and the finished composite.</p>
+        </div>
+        <div class="image-comparison" data-image-comparison style="--position: 50%;">
+          <img class="comparison-image comparison-image-after" src="../assets/images/pocketkeyer/comparison-composited.jpg" alt="" width="1920" height="1080">
+          <div class="comparison-before">
+            <img class="comparison-image" src="../assets/images/pocketkeyer/comparison-camera.jpg" alt="" width="1920" height="1080">
+          </div>
+          <span class="comparison-label comparison-label-before">撮影映像 / Camera</span>
+          <span class="comparison-label comparison-label-after">PocketKeyer合成 / Composited</span>
+          <div class="comparison-divider" aria-hidden="true">
+            <span>↔</span>
+          </div>
+          <input class="comparison-range" type="range" min="0" max="100" value="50" aria-label="グリーンバック前の撮影映像とPocketKeyerによる室内背景への合成結果を比較する位置">
+        </div>
+        <p class="comparison-note">実際のPocketKeyerによる合成結果です。仕上がりは、照明、グリーンバックの状態、撮影条件、調整内容によって変わります。</p>
+        <p class="comparison-note" lang="en">Actual PocketKeyer output. Results vary with lighting, screen condition, shooting conditions, and settings.</p>
       </section>
 
       <section class="product-section" aria-labelledby="realtime-title">
@@ -78,25 +110,35 @@
           <p>合成済みの映像を、動画・静止画・リアルタイム出力として利用できます。</p>
           <p lang="en">Use the finished composite as recorded video, a still image, or a live video source.</p>
         </div>
-        <div class="use-grid">
-          <article class="use-card">
-            <h3>YouTube・TikTok</h3>
-            <p>音声付きで録画し、投稿用動画のキーイング工程を減らせます。</p>
-          </article>
-          <article class="use-card">
-            <h3>Instagram</h3>
-            <p>縦向きの動画や、合成済みの静止画を投稿素材として保存できます。</p>
-          </article>
-          <article class="use-card">
-            <h3>ライブ配信</h3>
-            <p>合成済みの映像を、配信アプリや配信機器へリアルタイムに送れます。</p>
-          </article>
-          <article class="use-card">
-            <h3>小規模な映像制作</h3>
-            <p>ビデオスイッチャーへ、合成済みの1つの映像ソースとして入力できます。</p>
-          </article>
+        <div class="use-layout">
+          <figure class="portrait-example">
+            <img src="../assets/images/pocketkeyer/portrait-composited.jpg" alt="PocketKeyerで海辺の背景と合成した縦向きの映像" width="1080" height="1920" loading="lazy">
+            <figcaption>縦向きのプロジェクトにも対応<br><span>Portrait projects supported</span></figcaption>
+          </figure>
+          <div class="use-grid">
+            <article class="use-card">
+              <h3>YouTube・TikTok</h3>
+              <p>音声付きで録画し、投稿用動画のキーイング工程を減らせます。</p>
+            </article>
+            <article class="use-card">
+              <h3>Instagram</h3>
+              <p>縦向きの動画や、合成済みの静止画を投稿素材として保存できます。</p>
+            </article>
+            <article class="use-card">
+              <h3>ライブ配信</h3>
+              <p>合成済みの映像を、配信アプリや配信機器へリアルタイムに送れます。</p>
+            </article>
+            <article class="use-card">
+              <h3>小規模な映像制作</h3>
+              <p>ビデオスイッチャーへ、合成済みの1つの映像ソースとして入力できます。</p>
+            </article>
+            <article class="use-card education-card">
+              <h3>教育現場にも</h3>
+              <p>クロマキーやキーイングの基本を、結果を見ながら試せます。映像制作やバーチャルプロダクションの入り口として、学生の作品づくりにも活用できます。</p>
+            </article>
+          </div>
         </div>
-        <p class="use-note" lang="en">For YouTube and TikTok videos, Instagram posts, live streaming, and compact video-production setups.</p>
+        <p class="use-note" lang="en">For YouTube and TikTok videos, Instagram posts, live streaming, compact video-production setups, and learning the basics of chroma key compositing.</p>
       </section>
 
       <section class="product-section controls-section" aria-labelledby="controls-title">
@@ -131,11 +173,6 @@
         </div>
         <div class="facts-grid">
           <div class="fact-card">
-            <span>Device</span>
-            <strong>iPhone</strong>
-            <small>iPadは正式対応外</small>
-          </div>
-          <div class="fact-card">
             <span>System</span>
             <strong>iOS 26+</strong>
             <small>iOS 26以降</small>
@@ -144,11 +181,6 @@
             <span>Resolution</span>
             <strong>1080p</strong>
             <small>1920 × 1080</small>
-          </div>
-          <div class="fact-card">
-            <span>Frame rates</span>
-            <strong>4</strong>
-            <small>59.94 / 50 / 29.97 / 25</small>
           </div>
         </div>
       </section>
