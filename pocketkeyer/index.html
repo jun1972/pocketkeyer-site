@@ -55,21 +55,23 @@
         <div class="section-heading">
           <p class="eyebrow">Actual PocketKeyer output</p>
           <h2 id="comparison-title">実際に、PocketKeyerで<br>合成しました。</h2>
-          <p>グリーンバックの撮影素材を、PocketKeyerでリアルタイムに背景合成した結果です。中央のハンドルを左右に動かして比較できます。</p>
-          <p lang="en">This composite was created in real time with PocketKeyer. Drag the handle to compare the camera image and the finished composite.</p>
+          <p>グリーンバック素材を、PocketKeyerでリアルタイムに背景合成した結果です。中央のハンドルを左右に動かして比較できます。</p>
+          <p lang="en">This composite was created in real time with PocketKeyer. Drag the handle to compare the green-screen source and the finished composite.</p>
         </div>
         <div class="image-comparison" data-image-comparison style="--position: 50%;">
           <img class="comparison-image comparison-image-after" src="../assets/images/pocketkeyer/comparison-composited.jpg" alt="" width="1920" height="1080">
           <div class="comparison-before">
             <img class="comparison-image" src="../assets/images/pocketkeyer/comparison-camera.jpg" alt="" width="1920" height="1080">
           </div>
-          <span class="comparison-label comparison-label-before">撮影映像 / Camera</span>
-          <span class="comparison-label comparison-label-after">PocketKeyer合成 / Composited</span>
+          <span class="comparison-label comparison-label-before">グリーンバック素材 / Green-screen source</span>
+          <span class="comparison-label comparison-label-after">PocketKeyer合成 / Composited with PocketKeyer</span>
           <div class="comparison-divider" aria-hidden="true">
             <span>↔</span>
           </div>
-          <input class="comparison-range" type="range" min="0" max="100" value="50" aria-label="グリーンバック前の撮影映像とPocketKeyerによる室内背景への合成結果を比較する位置">
+          <input class="comparison-range" type="range" min="0" max="100" value="50" aria-label="グリーンバック素材とPocketKeyerによる室内背景への合成結果を比較する位置">
         </div>
+        <p class="comparison-note">合成前の人物・グリーンバック画像はAIで作成し、背景合成はPocketKeyerで行っています。</p>
+        <p class="comparison-note" lang="en">The person and green-screen source image were AI-generated. The background composite was created with PocketKeyer.</p>
         <p class="comparison-note">実際のPocketKeyerによる合成結果です。仕上がりは、照明、グリーンバックの状態、撮影条件、調整内容によって変わります。</p>
         <p class="comparison-note" lang="en">Actual PocketKeyer output. Results vary with lighting, screen condition, shooting conditions, and settings.</p>
       </section>
