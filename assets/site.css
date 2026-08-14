@@ -495,7 +495,7 @@ h1 {
 .comparison-label {
   position: absolute;
   z-index: 3;
-  top: 1rem;
+  bottom: 1rem;
   padding: 0.35rem 0.7rem;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
